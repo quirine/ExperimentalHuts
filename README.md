@@ -5,7 +5,7 @@ This repository contains code used in the following paper.
 
 Quirine A. ten Bosch,Fanny Castro-Llanos, Hortance Manda, Amy C. Morrison, John P. Grieco, Nicole L. Achee, T. Alex Perkins (2017) **Model-based analysis of experimental hut data elucidates multifaceted effects of a volatile chemical on Aedes aegypti mosquitoes**. *BioRXivs* 
 
-All code contained within this repository is released under the [CRAPL v0.1 License](http://matt.might.net/articles/crapl/). Data provided in this repository are sufficient to rerun all analyses. Because of the large sizes of the output files, we have deposited those on Open Science Framework [https://osf.io/xtmy7/](https://osf.io/xtmy7/) as part of project [https://osf.io/5hcpf/] (https://osf.io/5hcpf/).
+All code contained within this repository is released under the [CRAPL v0.1 License](http://matt.might.net/articles/crapl/). Data provided in this repository are sufficient to rerun all analyses. Because of the large sizes of the output files, we have deposited those on Open Science Framework [https://osf.io/xtmy7/](https://osf.io/xtmy7/) as part of project [https://osf.io/5hcpf/](https://osf.io/5hcpf/).
 
 The scripts for simulations and model fitting were performed on the University of Notre Dame's Center for Research Computing cluster [http://crc.nd.edu](http://crc.nd.edu). Processing of outputs was done on desktop comuputer (Mac OSX) 
 
