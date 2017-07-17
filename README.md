@@ -38,9 +38,7 @@ to fit the modeling framework to the real data:
 
 Note that for a quick run, you can adjust the number of iterations in Paramers.LTFU.SR.Exit.R 
 
-Main.....: are drivers of specific procedures 
-SR.....: function files 
-....RData: data files to reproduce results:
+Main.....: are drivers of specific procedures, SR.....: function files, ....RData: data files to reproduce results:
 * `ExitData.ltfu.RData` contains the experimental hut data
 * `timespent.fixedr.RData` contains the results from running the odes on the posterior outcomes to estimate the proportion of time spent in each hut. Can be reproduced with ./Processingfiles/Process_Figure6.R
 
