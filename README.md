@@ -7,6 +7,7 @@ Quirine A. ten Bosch,Fanny Castro-Llanos, Hortance Manda, Amy C. Morrison, John 
 
 All code contained within this repository is released under the [CRAPL v0.1 License](http://matt.might.net/articles/crapl/). Data provided in this repository are sufficient to rerun all analyses. Because of the large sizes of the output files, we have deposited those on Open Science Framework [https://osf.io/xtmy7/](https://osf.io/xtmy7/) as part of project [https://osf.io/5hcpf/] (https://osf.io/5hcpf/).
 
+The scripts for simulations and model fitting were performed on the University of Notre Dame's Center for Research Computing cluster [http://crc.nd.edu](http://crc.nd.edu). Processing of outputs was done on desktop comuputer (Mac OSX) 
 
 ====================
 
@@ -14,15 +15,13 @@ All code contained within this repository is released under the [CRAPL v0.1 Lice
 
 * `Scripts` contains code to simulate and fit the model 
 * `./Runfiles` contains scripts to reproduce all runs described in the manuscript. Calls scripts from the `Scripts` folder
-* `./Processingfiles` contains scripts to process the results and create figures. It assumes `Output` is saved at same level as `Scripts` and save figures in the `Figures` folder.
+* `./Processingfiles` contains scripts to process the results and create figures. It assumes `Output` is saved at same level as `Scripts` and saves figures in a `Figures` folder.
 
 ### Scripts folder
 
 The scripts in this folder are used to fit the modeling framework to simulated data as well as the experimental hut data. The outputs of these exercises are given in [https://osf.io/xtmy7/](https://osf.io/xtmy7/) and are processed using the scripts in the Processing folder. 
 
-These scripts for simulations and model fitting were performed on the University of Notre Dame's Center for Research Computing cluster [http://crc.nd.edu](http://crc.nd.edu). Processing of outputs was done on desktop comuputer (Mac OSX) 
-
-To run a test on simulated data and to run the algorithm once on real data for baseline, high, and low dosage, run:
+To run a test on simulated data and to run the algorithm on real data for baseline, high, and low dosage, run:
 
 * `Main.Manuscript.SR.R`, which calls the files below
 
@@ -36,11 +35,11 @@ to fit the modeling framework to the real data:
 * `ExitData.ltfu.RData`
 * `Main.RunMCMConLTFUData.SR.Exit.R`
 
-Note that for a quick run, you can adjust the number of iterations in Paramers.LTFU.SR.Exit.R 
+Note that for a quick run, you can adjust the number of iterations in `Paramers.LTFU.SR.Exit.R` 
 
 Main.....: are drivers of specific procedures, SR.....: function files, ....RData: data files to reproduce results:
 * `ExitData.ltfu.RData` contains the experimental hut data
-* `timespent.fixedr.RData` contains the results from running the odes on the posterior outcomes to estimate the proportion of time spent in each hut. Can be reproduced with ./Processingfiles/Process_Figure6.R
+* `timespent.fixedr.RData` contains the results from running the odes on the posterior outcomes to estimate the proportion of time spent in each hut. Can be reproduced with `./Processingfiles/Process_Figure6.R`
 
 ### Scripts/Runfiles folder
 
@@ -49,8 +48,7 @@ For each dosage, the R-file is provided that runs at the default r (proportion o
 
 ### Scripts/Runfiles/SimulationSets folder 
 
-Contains python script to automate the creation of Run-files to simulate data at different values and run the modeling framework on these data. 
-
+Contains python script to automate the creation of Run-files to simulate data at different parameter values for 1000 and 25 mosquitoes and run the modeling framework on these data. 
 
 ### Scripts/Processingfiles folder 
 Contains the scripts to create all the figures in the manuscript. It uses output data deposited on [https://osf.io/xtmy7/](https://osf.io/xtmy7/)
