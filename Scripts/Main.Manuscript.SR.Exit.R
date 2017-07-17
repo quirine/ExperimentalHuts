@@ -14,10 +14,6 @@ source('Parameters.LTFU.SR.Exit.R')
 source('Main.SimulateData.LTFU.SR.Exit.R')
 source('Main.RunMCMC.LTFU.SR.Exit.R')
 
-# Run on simulated sweeps for 25 and 1000 mosquitoes case with recaptured and lost mosquitoes (ltfu case) ---
-source('Main.ParameterSweep.25.SR.Exit.R')
-source('Main.ParameterSweep.1000.SR.Exit.R')
-
 # Run on real data -------------------------------------------
 rm(list=ls())
 source('Parameters.LTFU.SR.Exit.R')
